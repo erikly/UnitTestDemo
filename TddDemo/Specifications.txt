@@ -1,0 +1,3 @@
+﻿Return positive numbers
+Odd numbers should be multiplied by 2 and returned
+Negative numbers should write the number to a log and throw an exception
