@@ -3,6 +3,5 @@
     public interface IDie
     {
         int GetDieRoll();
-        int Bonus { get; }
     }
 }

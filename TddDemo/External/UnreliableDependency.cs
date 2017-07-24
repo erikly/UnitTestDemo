@@ -7,7 +7,7 @@ namespace TddDemo.External
     // We do not own this class! Do not touch!
     class UnreliableDependency
     {
-        private readonly Random _rng;
+        private readonly Random _rng = new Random();
         // Simulate unstable behaviour
         public int GetResult()
         {

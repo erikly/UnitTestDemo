@@ -6,6 +6,5 @@ namespace UnitTest.Test
     public class PlayerWithDiTest
     {
 
-
     }
 }

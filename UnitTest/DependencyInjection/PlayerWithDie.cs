@@ -19,7 +19,6 @@ namespace UnitTestDemo
 
             if (dieRoll == 6)
             {
-                dieRoll += _die.Bonus;
                 // special event, lots of fun game logic
 
                 // oops, something went wrong!

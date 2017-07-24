@@ -6,5 +6,9 @@ namespace TddDemo
 {
     public class BusinessLogic
     {
+        public int Execute()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

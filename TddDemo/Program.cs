@@ -1,12 +1,11 @@
-﻿using System;
-
-namespace TddDemo
+﻿namespace TddDemo
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var logic = new BusinessLogic();
+            logic.Execute();
         }
     }
 }
