@@ -11,6 +11,7 @@ namespace TddDemo.External
         // Simulate unstable behaviour
         public int GetResult()
         {
+            // oops
             return _rng.Next(-5, 50);
         }
     }

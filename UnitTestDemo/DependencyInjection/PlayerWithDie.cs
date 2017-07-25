@@ -5,7 +5,7 @@ namespace UnitTestDemo
 {
     public class PlayerWithDie
     {
-        private readonly IDie _die;
+        private IDie _die;
         public PlayerWithDie(IDie die)
         {
             _die = die;
@@ -20,9 +20,10 @@ namespace UnitTestDemo
             if (dieRoll == 6)
             {
                 // special event, lots of fun game logic
+                _die.GetDieRoll();
 
                 // oops, something went wrong!
-                throw new Exception();
+                //throw new Exception();
             }
         }
     }

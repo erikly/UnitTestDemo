@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            var logic = new BusinessLogic();
+            var logic = new BusinessLogic(new DependencyAdapter());
             logic.Execute();
         }
     }

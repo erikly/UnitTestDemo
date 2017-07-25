@@ -16,11 +16,17 @@ namespace UnitTestDemo
 
             if(dieThrow == 6)
             {
-                // special event, lots of fun game logic
-
-                // oops, something went wrong!
-                throw new Exception();
+                SpecialEvent();
+                return;
             }
+        }
+
+        internal void SpecialEvent()
+        {
+            // special event, lots of fun game logic
+
+            // oops, something went wrong!
+            throw new Exception();
         }
     }
 }

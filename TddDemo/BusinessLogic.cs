@@ -6,9 +6,16 @@ namespace TddDemo
 {
     public class BusinessLogic
     {
+        private IDependency _dependency;
+
+        public BusinessLogic(IDependency dependency)
+        {
+            _dependency = dependency;
+        }
+
         public int Execute()
         {
-            throw new NotImplementedException();
+            return _dependency.GetResult();
         }
     }
 }
