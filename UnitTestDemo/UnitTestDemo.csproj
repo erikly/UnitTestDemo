@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2F45093D-8F01-4FC2-91D5-1F1D78102D70}</ProjectGuid>
+    <ProjectGuid>{8AD7A0F9-7793-4CCB-859A-EB707E1DCBA8}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>TddDemo</RootNamespace>
-    <AssemblyName>TddDemo</AssemblyName>
+    <RootNamespace>UnitTestDemo</RootNamespace>
+    <AssemblyName>UnitTestDemo</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -41,16 +41,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BusinessLogic.cs" />
-    <Compile Include="External\UnreliableDependency.cs" />
+    <Compile Include="DependencyInjection\Die.cs" />
+    <Compile Include="DependencyInjection\IDie.cs" />
+    <Compile Include="DependencyInjection\PlayerWithDie.cs" />
+    <Compile Include="Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Specifications.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
